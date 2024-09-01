@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Potfolio</title>
+    <link rel="stylesheet" href="pp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity=
+    "sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+<body>
+    <div id="header">
+        <div class="con">
+    <h1><span class="h">S</span>aMi</h1>
+     <div class="con"><nav>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>
+    </div>
+</div><div class="text">
+    <p>Web Developer</p>
+    <h1>Hi, I'm <span class="s">SaMi</span><br>From Pakistan.</h1>
+</div>
+</div>
+
+<!----------------About------------------->
+<div id="about">
+    <div class="row">
+        <div class="col1">
+            <img src="ab.png">
+        </div>
+        <div class="col2"><h1 class="ab">About Me</h1>
+        <p>Hello, My name is Muhammad Sami. I'm form Sindh Pakistan. <br>I'm in Class 12th in Higher Secondary School. <br>
+        Now I'm learning Certified Cloud Aplied Generative AI Engineering from the Governor Sindh Initiative in Governor
+     House.  </p>
+     <div class="tabtitles">
+        <p class="link active" onclick="opentab('skills')">Skills</p>
+        <p class="link" onclick="opentab('education')">Education</p>
+     </div>
+     <div class="tab activetab" id="skills">
+        <ul>
+            <li><span>HTML</span><br>Hypertext Markup Language</li>
+            <li><span>CSS</span><br>Cascading Styling Sheet</li>
+            <li><span>TS/JS</span><br>Typescript/Javascript</li>
+        </ul>
+     </div>
+     <div class="tab" id="education">
+        <ul>
+            <li><span>10th Class</span><br>10th Class Passed in 2023 in High School</li>
+            <li><span>12th Class</span><br>Currently I'm in 12th Class in Higher Secondary School</li>
+            <li><span>TS/JS</span><br>Typescript/JavaScript Completed in July 2024</li>
+            <li><span>AI Web 3.0 & Mataverse </span><br>Currently learning in Governor Sindh Initiative</li>
+        </ul>
+     </div>
+
+     
+</div>
+
+    </div>
+</div>
+<!----------------Contact------------------->
+<div id="contact">
+    <div class="container">
+        <h1 class="title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>   samiqaimkhani43@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>    +92 333 3739199</p>
+        <div class="social-icon">
+            <a href="https://www.facebook.com/sami.qaimkhani.37"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-sami-359601281/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sami00712"><i class="fab fa-github"></i></a>
+            <a href="https://www.npmjs.com/~muhammad_sami007"><i class="fab fa-npm"></i></a>
+        </div>
+    </div>
+</div>
+<div class="cr">
+    <p>Copyright © SaMi<span>❤</span>Made by SaMi</p>
+</div>
+<script>
+
+    var link = document.getElementsByClassName("link");
+    var tab = document.getElementsByClassName("tab");
+
+    function opentab(tabname){
+        for(links of link){
+            links.classList.remove("active");
+        }
+        for(tabs of tab){
+            tabs.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById(tabname).classList.add("activetab")
+    }
+</script>
+</body>
+</html>
